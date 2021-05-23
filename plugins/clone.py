@@ -84,6 +84,8 @@ async def clone_medias(client: Bot, message: Message):
                     )
                 except FloodWait as e:
                     await asyncio.sleep(e.x)
+                except Exception:
+                    pass
                 if usr in clone_status:
                     pass
                 else:
